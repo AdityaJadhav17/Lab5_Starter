@@ -5,9 +5,10 @@ Name: Aditya Jadhav
 
 Lab Partner: None
 
-Expose Page: TODO add GitHub Pages expose.html link
+## GitHub Pages Links
 
-Explore Page: TODO add GitHub Pages explore.html link
+- Expose / Party Horn: https://AdityaJadhav17.github.io/Lab5_Starter/expose.html
+- Explore / Speech Synthesis: https://AdityaJadhav17.github.io/Lab5_Starter/explore.html
 
 ## Check Your Understanding
 
