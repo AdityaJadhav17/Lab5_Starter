@@ -7,8 +7,8 @@ Lab Partner: None
 
 ## GitHub Pages Links
 
-- Expose / Party Horn: https://AdityaJadhav17.github.io/Lab5_Starter/expose.html
-- Explore / Speech Synthesis: https://AdityaJadhav17.github.io/Lab5_Starter/explore.html
+- [Expose / Party Horn](https://AdityaJadhav17.github.io/Lab5_Starter/expose.html)
+- [Explore / Speech Synthesis](https://AdityaJadhav17.github.io/Lab5_Starter/explore.html)
 
 ## Check Your Understanding
 
