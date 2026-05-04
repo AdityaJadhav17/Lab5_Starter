@@ -8,7 +8,7 @@ function init() {
   const talkButton = document.querySelector('#explore button');
   const faceImage = document.querySelector('#explore > img');
   const normalFace = 'assets/images/smiling.png';
-  const speakingFace = 'assets/images/speaking.png';
+  const speakingFace = 'assets/images/smiling-open.png';
 
   if (!('speechSynthesis' in window)) {
     return;
@@ -45,21 +45,17 @@ function init() {
       utterance.voice = selectedVoice;
     }
 
-    utterance.onstart = () => {
-      faceImage.src = speakingFace;
-      faceImage.alt = 'Speaking face';
-    };
-
-    utterance.onend = () => {
+    function resetFace() {
       faceImage.src = normalFace;
       faceImage.alt = 'Smiling face';
-    };
+    }
 
-    utterance.onerror = () => {
-      faceImage.src = normalFace;
-      faceImage.alt = 'Smiling face';
-    };
+    utterance.onend = resetFace;
+    utterance.onerror = resetFace;
 
+    window.speechSynthesis.cancel();
+    faceImage.src = speakingFace;
+    faceImage.alt = 'Speaking face';
     window.speechSynthesis.speak(utterance);
   });
 }
